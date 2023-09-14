@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+<body>
+
+    <header>
+        <h1>Kalkulator Hitung Persegi</h1>
+    </header>
+
+    <main>
+        <section id="headerMain">
+            <h2>Welcome Guys!!</h2>
+            <p>Selamat datang di website sederhana untuk menghitung luas dan keliling Persegi</p>
+        </section>
+        <section id="headerHitungLuas">
+            <h3>Hitung Luas</h3>
+        </section>
+        <section id="mainHitungLuas">
+            <img class="image-persegi" src="assets/persegi.jpg" alt="Bangun Datar Persegi" width="200px" height="200px">
+            <P>Rumus Luas Persegi yaitu:</P>
+            <p class="rumusLuas">Luas = Sisi x Sisi</p>
+        </section>
+        <section class="luasInputSection">
+            <label for="inputSisiLuas">Nilai Sisi:</label>
+            <input type="number" id="inputSisiLuas" placeholder="Masukan nilai sisi">
+        </section>
+        <section class="inputButtonSection">
+            <button onclick="jalankan3FungsiLuas()">Hitung</button>
+            <button onclick="resetLuas()">Reset</button>
+        </section>
+        <section>
+            <h3>Hasil Penghitungan Luas:</h3>
+        </section>
+        <section id="showRumusLuas"></section>
+        <section id="showNilaiSisiLuas"></section>
+        <section id="hasilLuas"></section>
+
+        <section id="headerHitungKeliling">
+            <h3>Hitung Keliling</h3>
+        </section>
+        <section id="mainHitungKeliling">
+            <img class="image-persegi" src="assets/persegi.jpg" alt="Bangun Datar Persegi" width="200px" height="200px">
+            <P>Rumus Keliling Persegi yaitu:</P>
+            <p class="rumusKeliling">Keliling = 4 x Sisi</p>
+        </section>
+        <section class="kelilingInputSection">
+            <label for="inputSisiKeliling">Nilai Sisi:</label>
+            <input type="number" id="inputSisiKeliling" placeholder="Masukan nilai sisi">
+        </section>
+        <section class="inputButtonSection">
+            <button onclick="jalankan3FungsiKeliling()">Hitung</button>
+            <button button onclick="resetKeliling()">Reset</button>
+        </section>
+        <section>
+            <h3>Hasil Penghitungan Keliling:</h3>
+        </section>
+        <section id="showRumusKeliling"></section>
+        <section id="showNilaiSisiKeliling"></section>
+        <section id="hasilKeliling"></section>
+    </main>
+
+    <footer>
+        <h2 class="about">ABOUT</h2>
+        <p class="isiAbout">Kalkulator Hitung Persegi merupakan website sederhana yang dirancang untuk membantu dalam mencari hasil 
+        untuk penghitungan luas dan keliling persegi dengan hanya memasukkan nilai sisi untuk mendapatkan hasil yang diinginkan.</p>
+        <p class="copyright">Copyright © 2023 by Firman Hoerulloh. All Rights Reserved</p>
+    </footer>
+     
+</body>
+</html>
